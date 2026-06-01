@@ -1,0 +1,42 @@
+name: Update Review Data
+
+on:
+  schedule:
+    - cron: '7 6 * * *'
+  workflow_dispatch:
+    inputs:
+      reviewers:
+        description: 'Comma-separated list of reviewers (leave empty for config.json default)'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch review data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "${{ inputs.reviewers }}" ]; then
+            python3 fetch_reviews.py --reviewers "${{ inputs.reviewers }}"
+          else
+            python3 fetch_reviews.py
+          fi
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/reviews.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: update review data $(date -u +%Y-%m-%d)"
+          git push

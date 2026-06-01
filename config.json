@@ -1,0 +1,16 @@
+{
+  "repository": "vllm-project/vllm",
+  "reviewers": [
+    "NickLucche",
+    "tjtanaa",
+    "AndreasKaratzas",
+    "yewentao256",
+    "DarkLight1337",
+    "njhill",
+    "Isotr0py",
+    "mgoin",
+    "chaunceyjiang",
+    "hmellor"
+  ],
+  "since": "2025-12-01"
+}
