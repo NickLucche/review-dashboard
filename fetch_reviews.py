@@ -165,6 +165,7 @@ def compute_stats(events):
             "day_of_week": [0] * 7, "busiest_days": [], "busiest_days_by_prs": [],
             "review_depth": {"avg_per_pr": 0, "single_review": 0, "two_three_reviews": 0, "four_plus_reviews": 0},
             "daily_timeline": [],
+            "recent_stats": {"total_reviews": 0, "unique_prs": 0, "type_breakdown": {}},
         }
 
     for e in events:
@@ -232,6 +233,15 @@ def compute_stats(events):
 
     state_counts = Counter(e["state"] for e in events)
 
+    cutoff_90d = (datetime.now(timezone.utc).date() - timedelta(days=90))
+    recent_events = [e for e in events if e["date"] >= cutoff_90d]
+    recent_state_counts = Counter(e["state"] for e in recent_events)
+    recent_stats = {
+        "total_reviews": len(recent_events),
+        "unique_prs": len(set(e["pr"] for e in recent_events)),
+        "type_breakdown": dict(recent_state_counts),
+    }
+
     return {
         "total_reviews": len(events),
         "unique_prs": len(set(e["pr"] for e in events)),
@@ -250,6 +260,7 @@ def compute_stats(events):
             "four_plus_reviews": sum(1 for c in counts_list if c >= 4),
         },
         "daily_timeline": daily_timeline,
+        "recent_stats": recent_stats,
     }
 
 
@@ -308,12 +319,29 @@ def main():
         reverse=True,
     )
 
+    recent_leaderboard = sorted(
+        [
+            {
+                "user": user,
+                "total_reviews": stats["recent_stats"]["total_reviews"],
+                "unique_prs": stats["recent_stats"]["unique_prs"],
+                "approved": stats["recent_stats"]["type_breakdown"].get("APPROVED", 0),
+                "commented": stats["recent_stats"]["type_breakdown"].get("COMMENTED", 0),
+                "changes_requested": stats["recent_stats"]["type_breakdown"].get("CHANGES_REQUESTED", 0),
+            }
+            for user, stats in all_stats.items()
+        ],
+        key=lambda x: x["total_reviews"],
+        reverse=True,
+    )
+
     output = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "repository": repo,
         "since": since,
         "reviewers": all_stats,
         "leaderboard": leaderboard,
+        "recent_leaderboard": recent_leaderboard,
     }
 
     with open(args.output, "w") as f:

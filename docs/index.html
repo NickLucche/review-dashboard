@@ -95,6 +95,22 @@ canvas { max-height: 300px; }
     </table>
   </div>
 
+  <div class="card" style="margin-bottom: 1.5rem; overflow-x: auto;">
+    <h2>Last 3 Months</h2>
+    <table id="recent-leaderboard">
+      <thead><tr>
+        <th class="num" data-key="rank">#</th>
+        <th data-key="user">Reviewer</th>
+        <th class="num" data-key="total_reviews">Reviews</th>
+        <th class="num" data-key="unique_prs">PRs</th>
+        <th class="num" data-key="approved">Approved</th>
+        <th class="num" data-key="commented">Commented</th>
+        <th class="num" data-key="changes_requested">Changes Req</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
   <div class="charts-grid">
     <div class="card"><h2>Monthly Activity</h2><canvas id="chart-monthly"></canvas></div>
     <div class="card"><h2>Review Types</h2><canvas id="chart-types"></canvas></div>
@@ -157,9 +173,10 @@ function renderStatsBar() {
   ].map(s => `<div class="stat-box"><div class="value">${s.value}</div><div class="label">${s.label}</div></div>`).join('');
 }
 
-function renderLeaderboard() {
-  const tbody = document.querySelector('#leaderboard tbody');
-  let rows = DATA.leaderboard.map((r, i) => ({ ...r, rank: i + 1 }));
+function makeSortableLeaderboard(tableId, data) {
+  const table = document.getElementById(tableId);
+  const tbody = table.querySelector('tbody');
+  let rows = data.map((r, i) => ({ ...r, rank: i + 1 }));
   let sortKey = 'rank';
   let sortDir = 'asc';
 
@@ -178,7 +195,7 @@ function renderLeaderboard() {
     }).join('');
   }
 
-  document.querySelectorAll('#leaderboard th').forEach(th => {
+  table.querySelectorAll('th').forEach(th => {
     th.addEventListener('click', () => {
       const key = th.dataset.key;
       if (sortKey === key) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
@@ -191,13 +208,21 @@ function renderLeaderboard() {
         return sortDir === 'asc' ? cmp : -cmp;
       });
 
-      document.querySelectorAll('#leaderboard th').forEach(t => t.classList.remove('sorted-asc', 'sorted-desc'));
+      table.querySelectorAll('th').forEach(t => t.classList.remove('sorted-asc', 'sorted-desc'));
       th.classList.add(sortDir === 'asc' ? 'sorted-asc' : 'sorted-desc');
       draw();
     });
   });
 
   draw();
+}
+
+function renderLeaderboard() {
+  makeSortableLeaderboard('leaderboard', DATA.leaderboard);
+}
+
+function renderRecentLeaderboard() {
+  makeSortableLeaderboard('recent-leaderboard', DATA.recent_leaderboard || []);
 }
 
 function renderMonthlyChart() {
@@ -356,6 +381,7 @@ async function init() {
     renderMeta();
     renderStatsBar();
     renderLeaderboard();
+    renderRecentLeaderboard();
     renderMonthlyChart();
     renderTypesChart();
     renderWeeklyChart();
