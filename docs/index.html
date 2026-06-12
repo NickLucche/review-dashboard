@@ -322,6 +322,8 @@ function renderDetails() {
     const depth = s.review_depth;
     const busiest = s.busiest_days.slice(0, 5)
       .map(d => `<tr><td>${d.date}</td><td class="num">${d.count}</td></tr>`).join('');
+    const busiestPrs = (s.busiest_days_by_prs || []).slice(0, 5)
+      .map(d => `<tr><td>${d.date}</td><td class="num">${d.unique_prs}</td><td class="num">${d.events}</td></tr>`).join('');
 
     return `<details>
       <summary>${u} — ${s.total_reviews} reviews across ${s.unique_prs} PRs</summary>
@@ -333,8 +335,16 @@ function renderDetails() {
           <div class="detail-stat"><div class="label">2-3 Review PRs</div><div class="val">${depth.two_three_reviews}</div></div>
           <div class="detail-stat"><div class="label">4+ Review PRs</div><div class="val">${depth.four_plus_reviews}</div></div>
         </div>
-        <h4 style="margin: 1rem 0 0.5rem; font-size: 0.9rem;">Top 5 Busiest Days</h4>
-        <table class="mini-table"><thead><tr><th>Date</th><th class="num">Reviews</th></tr></thead><tbody>${busiest}</tbody></table>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+          <div>
+            <h4 style="margin: 0 0 0.5rem; font-size: 0.9rem;">Top 5 Busiest Days (Events)</h4>
+            <table class="mini-table"><thead><tr><th>Date</th><th class="num">Events</th></tr></thead><tbody>${busiest}</tbody></table>
+          </div>
+          <div>
+            <h4 style="margin: 0 0 0.5rem; font-size: 0.9rem;">Top 5 Busiest Days (Unique PRs)</h4>
+            <table class="mini-table"><thead><tr><th>Date</th><th class="num">PRs</th><th class="num">Events</th></tr></thead><tbody>${busiestPrs}</tbody></table>
+          </div>
+        </div>
       </div>
     </details>`;
   }).join('');

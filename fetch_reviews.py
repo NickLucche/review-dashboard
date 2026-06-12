@@ -162,7 +162,7 @@ def compute_stats(events):
             "total_reviews": 0, "unique_prs": 0,
             "first_review": None, "last_review": None,
             "type_breakdown": {}, "monthly": [], "weekly": [],
-            "day_of_week": [0] * 7, "busiest_days": [],
+            "day_of_week": [0] * 7, "busiest_days": [], "busiest_days_by_prs": [],
             "review_depth": {"avg_per_pr": 0, "single_review": 0, "two_three_reviews": 0, "four_plus_reviews": 0},
             "daily_timeline": [],
         }
@@ -179,6 +179,7 @@ def compute_stats(events):
     weekly_events = defaultdict(int)
     weekly_prs = defaultdict(set)
     daily_counts = Counter()
+    daily_prs = defaultdict(set)
     day_of_week = [0] * 7
 
     for e in events:
@@ -193,6 +194,7 @@ def compute_stats(events):
         weekly_prs[week_key].add(e["pr"])
 
         daily_counts[d] += 1
+        daily_prs[d].add(e["pr"])
         day_of_week[d.weekday()] += 1
 
     monthly = [
@@ -211,6 +213,13 @@ def compute_stats(events):
         {"date": d.isoformat(), "count": c}
         for d, c in daily_counts.most_common(10)
     ]
+
+    busiest_by_prs = sorted(
+        [{"date": d.isoformat(), "unique_prs": len(prs), "events": daily_counts[d]}
+         for d, prs in daily_prs.items()],
+        key=lambda x: x["unique_prs"],
+        reverse=True,
+    )[:10]
 
     pr_counts = Counter(e["pr"] for e in events)
     counts_list = list(pr_counts.values())
@@ -233,6 +242,7 @@ def compute_stats(events):
         "weekly": weekly,
         "day_of_week": day_of_week,
         "busiest_days": busiest,
+        "busiest_days_by_prs": busiest_by_prs,
         "review_depth": {
             "avg_per_pr": round(avg_per_pr, 2),
             "single_review": sum(1 for c in counts_list if c == 1),
