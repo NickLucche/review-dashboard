@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-30T12:31:44Z",
+  "generated_at": "2026-10-01T13:06:33Z",
   "repository": "vllm-project/vllm",
   "since": "2025-12-01",
   "reviewers": {
     "NickLucche": {
-      "total_reviews": 788,
-      "unique_prs": 434,
+      "total_reviews": 789,
+      "unique_prs": 435,
       "first_review": "2025-02-18",
-      "last_review": "2026-09-29",
+      "last_review": "2026-10-01",
       "type_breakdown": {
         "COMMENTED": 520,
         "CHANGES_REQUESTED": 35,
-        "APPROVED": 231,
+        "APPROVED": 232,
         "DISMISSED": 2
       },
       "monthly": [
@@ -114,6 +114,11 @@
           "month": "2026-09",
           "events": 73,
           "unique_prs": 56
+        },
+        {
+          "month": "2026-10",
+          "events": 1,
+          "unique_prs": 1
         }
       ],
       "weekly": [
@@ -174,15 +179,15 @@
         },
         {
           "week": "2026-W40",
-          "events": 6,
-          "unique_prs": 6
+          "events": 7,
+          "unique_prs": 7
         }
       ],
       "day_of_week": [
         170,
         164,
         156,
-        142,
+        143,
         140,
         8,
         8
@@ -282,8 +287,8 @@
         }
       ],
       "review_depth": {
-        "avg_per_pr": 1.82,
-        "single_review": 257,
+        "avg_per_pr": 1.81,
+        "single_review": 258,
         "two_three_reviews": 135,
         "four_plus_reviews": 42
       },
@@ -1291,25 +1296,29 @@
         {
           "date": "2026-09-29",
           "count": 4
+        },
+        {
+          "date": "2026-10-01",
+          "count": 1
         }
       ],
       "recent_stats": {
         "total_reviews": 144,
-        "unique_prs": 107,
+        "unique_prs": 108,
         "type_breakdown": {
-          "COMMENTED": 76,
-          "APPROVED": 66,
+          "COMMENTED": 75,
+          "APPROVED": 67,
           "CHANGES_REQUESTED": 2
         }
       }
     },
     "tjtanaa": {
-      "total_reviews": 1715,
-      "unique_prs": 807,
+      "total_reviews": 1716,
+      "unique_prs": 808,
       "first_review": "2025-06-04",
-      "last_review": "2026-09-30",
+      "last_review": "2026-10-01",
       "type_breakdown": {
-        "COMMENTED": 1059,
+        "COMMENTED": 1060,
         "APPROVED": 634,
         "CHANGES_REQUESTED": 18,
         "DISMISSED": 4
@@ -1394,6 +1403,11 @@
           "month": "2026-09",
           "events": 118,
           "unique_prs": 84
+        },
+        {
+          "month": "2026-10",
+          "events": 1,
+          "unique_prs": 1
         }
       ],
       "weekly": [
@@ -1454,15 +1468,15 @@
         },
         {
           "week": "2026-W40",
-          "events": 10,
-          "unique_prs": 9
+          "events": 11,
+          "unique_prs": 10
         }
       ],
       "day_of_week": [
         269,
         336,
         380,
-        293,
+        294,
         230,
         133,
         74
@@ -1562,8 +1576,8 @@
         }
       ],
       "review_depth": {
-        "avg_per_pr": 2.13,
-        "single_review": 505,
+        "avg_per_pr": 2.12,
+        "single_review": 506,
         "two_three_reviews": 195,
         "four_plus_reviews": 107
       },
@@ -2623,26 +2637,30 @@
         {
           "date": "2026-09-30",
           "count": 2
+        },
+        {
+          "date": "2026-10-01",
+          "count": 1
         }
       ],
       "recent_stats": {
-        "total_reviews": 367,
-        "unique_prs": 236,
+        "total_reviews": 365,
+        "unique_prs": 234,
         "type_breakdown": {
-          "APPROVED": 190,
+          "APPROVED": 188,
           "COMMENTED": 172,
           "CHANGES_REQUESTED": 5
         }
       }
     },
     "AndreasKaratzas": {
-      "total_reviews": 1251,
-      "unique_prs": 744,
+      "total_reviews": 1260,
+      "unique_prs": 750,
       "first_review": "2025-11-19",
-      "last_review": "2026-09-30",
+      "last_review": "2026-10-01",
       "type_breakdown": {
-        "COMMENTED": 812,
-        "APPROVED": 409,
+        "COMMENTED": 816,
+        "APPROVED": 414,
         "CHANGES_REQUESTED": 24,
         "DISMISSED": 6
       },
@@ -2699,8 +2717,13 @@
         },
         {
           "month": "2026-09",
-          "events": 201,
-          "unique_prs": 163
+          "events": 209,
+          "unique_prs": 168
+        },
+        {
+          "month": "2026-10",
+          "events": 1,
+          "unique_prs": 1
         }
       ],
       "weekly": [
@@ -2761,15 +2784,15 @@
         },
         {
           "week": "2026-W40",
-          "events": 27,
-          "unique_prs": 25
+          "events": 36,
+          "unique_prs": 31
         }
       ],
       "day_of_week": [
         172,
         224,
-        218,
         226,
+        227,
         229,
         97,
         85
@@ -2870,8 +2893,8 @@
       ],
       "review_depth": {
         "avg_per_pr": 1.68,
-        "single_review": 531,
-        "two_three_reviews": 163,
+        "single_review": 535,
+        "two_three_reviews": 165,
         "four_plus_reviews": 50
       },
       "daily_timeline": [
@@ -3837,28 +3860,32 @@
         },
         {
           "date": "2026-09-30",
-          "count": 3
+          "count": 11
+        },
+        {
+          "date": "2026-10-01",
+          "count": 1
         }
       ],
       "recent_stats": {
-        "total_reviews": 502,
+        "total_reviews": 504,
         "unique_prs": 376,
         "type_breakdown": {
-          "COMMENTED": 194,
-          "APPROVED": 290,
+          "COMMENTED": 195,
+          "APPROVED": 291,
           "CHANGES_REQUESTED": 12,
           "DISMISSED": 6
         }
       }
     },
     "yewentao256": {
-      "total_reviews": 1840,
-      "unique_prs": 992,
+      "total_reviews": 1849,
+      "unique_prs": 996,
       "first_review": "2025-07-08",
-      "last_review": "2026-09-29",
+      "last_review": "2026-09-30",
       "type_breakdown": {
-        "COMMENTED": 1210,
-        "APPROVED": 606,
+        "COMMENTED": 1216,
+        "APPROVED": 609,
         "DISMISSED": 8,
         "CHANGES_REQUESTED": 16
       },
@@ -3935,8 +3962,8 @@
         },
         {
           "month": "2026-09",
-          "events": 212,
-          "unique_prs": 128
+          "events": 221,
+          "unique_prs": 132
         }
       ],
       "weekly": [
@@ -3997,14 +4024,14 @@
         },
         {
           "week": "2026-W40",
-          "events": 21,
-          "unique_prs": 19
+          "events": 30,
+          "unique_prs": 25
         }
       ],
       "day_of_week": [
         342,
         338,
-        315,
+        324,
         363,
         260,
         108,
@@ -4105,9 +4132,9 @@
         }
       ],
       "review_depth": {
-        "avg_per_pr": 1.85,
-        "single_review": 604,
-        "two_three_reviews": 285,
+        "avg_per_pr": 1.86,
+        "single_review": 607,
+        "two_three_reviews": 286,
         "four_plus_reviews": 103
       },
       "daily_timeline": [
@@ -5466,27 +5493,31 @@
         {
           "date": "2026-09-29",
           "count": 11
+        },
+        {
+          "date": "2026-09-30",
+          "count": 9
         }
       ],
       "recent_stats": {
-        "total_reviews": 589,
-        "unique_prs": 312,
+        "total_reviews": 587,
+        "unique_prs": 309,
         "type_breakdown": {
-          "COMMENTED": 398,
-          "APPROVED": 179,
+          "COMMENTED": 397,
+          "APPROVED": 178,
           "CHANGES_REQUESTED": 9,
           "DISMISSED": 3
         }
       }
     },
     "DarkLight1337": {
-      "total_reviews": 3569,
-      "unique_prs": 1646,
+      "total_reviews": 3579,
+      "unique_prs": 1654,
       "first_review": "2024-09-17",
-      "last_review": "2026-09-30",
+      "last_review": "2026-10-01",
       "type_breakdown": {
-        "COMMENTED": 2231,
-        "APPROVED": 1335,
+        "COMMENTED": 2234,
+        "APPROVED": 1342,
         "CHANGES_REQUESTED": 3
       },
       "monthly": [
@@ -5602,8 +5633,13 @@
         },
         {
           "month": "2026-09",
-          "events": 307,
-          "unique_prs": 178
+          "events": 309,
+          "unique_prs": 180
+        },
+        {
+          "month": "2026-10",
+          "events": 8,
+          "unique_prs": 7
         }
       ],
       "weekly": [
@@ -5664,15 +5700,15 @@
         },
         {
           "week": "2026-W40",
-          "events": 36,
-          "unique_prs": 26
+          "events": 46,
+          "unique_prs": 34
         }
       ],
       "day_of_week": [
         583,
         725,
-        621,
-        591,
+        623,
+        599,
         560,
         351,
         138
@@ -5772,9 +5808,9 @@
         }
       ],
       "review_depth": {
-        "avg_per_pr": 2.17,
-        "single_review": 1033,
-        "two_three_reviews": 393,
+        "avg_per_pr": 2.16,
+        "single_review": 1040,
+        "two_three_reviews": 394,
         "four_plus_reviews": 220
       },
       "daily_timeline": [
@@ -7256,28 +7292,32 @@
         },
         {
           "date": "2026-09-30",
-          "count": 17
+          "count": 19
+        },
+        {
+          "date": "2026-10-01",
+          "count": 8
         }
       ],
       "recent_stats": {
-        "total_reviews": 785,
-        "unique_prs": 426,
+        "total_reviews": 790,
+        "unique_prs": 432,
         "type_breakdown": {
-          "APPROVED": 371,
+          "APPROVED": 376,
           "COMMENTED": 413,
           "CHANGES_REQUESTED": 1
         }
       }
     },
     "njhill": {
-      "total_reviews": 1417,
-      "unique_prs": 896,
+      "total_reviews": 1435,
+      "unique_prs": 907,
       "first_review": "2024-08-01",
-      "last_review": "2026-09-30",
+      "last_review": "2026-10-01",
       "type_breakdown": {
-        "APPROVED": 650,
-        "COMMENTED": 719,
-        "CHANGES_REQUESTED": 48
+        "APPROVED": 662,
+        "COMMENTED": 724,
+        "CHANGES_REQUESTED": 49
       },
       "monthly": [
         {
@@ -7377,8 +7417,13 @@
         },
         {
           "month": "2026-09",
-          "events": 207,
-          "unique_prs": 151
+          "events": 219,
+          "unique_prs": 156
+        },
+        {
+          "month": "2026-10",
+          "events": 6,
+          "unique_prs": 6
         }
       ],
       "weekly": [
@@ -7439,15 +7484,15 @@
         },
         {
           "week": "2026-W40",
-          "events": 37,
-          "unique_prs": 24
+          "events": 55,
+          "unique_prs": 36
         }
       ],
       "day_of_week": [
         222,
         316,
-        234,
-        277,
+        246,
+        283,
         220,
         85,
         63
@@ -7490,8 +7535,8 @@
           "count": 15
         },
         {
-          "date": "2026-09-29",
-          "count": 14
+          "date": "2026-09-30",
+          "count": 15
         }
       ],
       "busiest_days_by_prs": [
@@ -7548,9 +7593,9 @@
       ],
       "review_depth": {
         "avg_per_pr": 1.58,
-        "single_review": 633,
-        "two_three_reviews": 204,
-        "four_plus_reviews": 59
+        "single_review": 641,
+        "two_three_reviews": 206,
+        "four_plus_reviews": 60
       },
       "daily_timeline": [
         {
@@ -8859,15 +8904,19 @@
         },
         {
           "date": "2026-09-30",
-          "count": 3
+          "count": 15
+        },
+        {
+          "date": "2026-10-01",
+          "count": 6
         }
       ],
       "recent_stats": {
-        "total_reviews": 531,
-        "unique_prs": 376,
+        "total_reviews": 540,
+        "unique_prs": 381,
         "type_breakdown": {
-          "COMMENTED": 204,
-          "APPROVED": 302,
+          "COMMENTED": 206,
+          "APPROVED": 309,
           "CHANGES_REQUESTED": 25
         }
       }
@@ -10349,23 +10398,23 @@
         }
       ],
       "recent_stats": {
-        "total_reviews": 398,
-        "unique_prs": 271,
+        "total_reviews": 396,
+        "unique_prs": 269,
         "type_breakdown": {
-          "APPROVED": 233,
+          "APPROVED": 231,
           "COMMENTED": 163,
           "CHANGES_REQUESTED": 2
         }
       }
     },
     "mgoin": {
-      "total_reviews": 1646,
-      "unique_prs": 1195,
+      "total_reviews": 1655,
+      "unique_prs": 1204,
       "first_review": "2024-05-03",
-      "last_review": "2026-09-29",
+      "last_review": "2026-09-30",
       "type_breakdown": {
-        "COMMENTED": 575,
-        "APPROVED": 1034,
+        "COMMENTED": 578,
+        "APPROVED": 1040,
         "CHANGES_REQUESTED": 37
       },
       "monthly": [
@@ -10491,8 +10540,8 @@
         },
         {
           "month": "2026-09",
-          "events": 105,
-          "unique_prs": 88
+          "events": 114,
+          "unique_prs": 97
         }
       ],
       "weekly": [
@@ -10553,14 +10602,14 @@
         },
         {
           "week": "2026-W40",
-          "events": 3,
-          "unique_prs": 3
+          "events": 12,
+          "unique_prs": 12
         }
       ],
       "day_of_week": [
         274,
         309,
-        310,
+        319,
         302,
         287,
         91,
@@ -10661,8 +10710,8 @@
         }
       ],
       "review_depth": {
-        "avg_per_pr": 1.38,
-        "single_review": 914,
+        "avg_per_pr": 1.37,
+        "single_review": 923,
         "two_three_reviews": 243,
         "four_plus_reviews": 38
       },
@@ -12074,14 +12123,18 @@
         {
           "date": "2026-09-29",
           "count": 1
+        },
+        {
+          "date": "2026-09-30",
+          "count": 9
         }
       ],
       "recent_stats": {
-        "total_reviews": 437,
-        "unique_prs": 346,
+        "total_reviews": 440,
+        "unique_prs": 350,
         "type_breakdown": {
           "APPROVED": 307,
-          "COMMENTED": 119,
+          "COMMENTED": 122,
           "CHANGES_REQUESTED": 11
         }
       }
@@ -13199,24 +13252,24 @@
         }
       ],
       "recent_stats": {
-        "total_reviews": 154,
-        "unique_prs": 100,
+        "total_reviews": 148,
+        "unique_prs": 98,
         "type_breakdown": {
-          "COMMENTED": 109,
-          "APPROVED": 45
+          "COMMENTED": 105,
+          "APPROVED": 43
         }
       }
     },
     "hmellor": {
-      "total_reviews": 1533,
-      "unique_prs": 694,
+      "total_reviews": 1536,
+      "unique_prs": 697,
       "first_review": "2025-02-17",
-      "last_review": "2026-09-30",
+      "last_review": "2026-10-01",
       "type_breakdown": {
         "COMMENTED": 1034,
-        "APPROVED": 348,
+        "APPROVED": 349,
         "DISMISSED": 18,
-        "CHANGES_REQUESTED": 133
+        "CHANGES_REQUESTED": 135
       },
       "monthly": [
         {
@@ -13311,8 +13364,13 @@
         },
         {
           "month": "2026-09",
-          "events": 193,
-          "unique_prs": 76
+          "events": 194,
+          "unique_prs": 77
+        },
+        {
+          "month": "2026-10",
+          "events": 2,
+          "unique_prs": 2
         }
       ],
       "weekly": [
@@ -13373,15 +13431,15 @@
         },
         {
           "week": "2026-W40",
-          "events": 6,
-          "unique_prs": 6
+          "events": 9,
+          "unique_prs": 9
         }
       ],
       "day_of_week": [
         272,
         334,
-        292,
-        299,
+        293,
+        301,
         292,
         29,
         15
@@ -13481,8 +13539,8 @@
         }
       ],
       "review_depth": {
-        "avg_per_pr": 2.21,
-        "single_review": 410,
+        "avg_per_pr": 2.2,
+        "single_review": 413,
         "two_three_reviews": 186,
         "four_plus_reviews": 98
       },
@@ -14513,16 +14571,20 @@
         },
         {
           "date": "2026-09-30",
-          "count": 3
+          "count": 4
+        },
+        {
+          "date": "2026-10-01",
+          "count": 2
         }
       ],
       "recent_stats": {
-        "total_reviews": 504,
-        "unique_prs": 201,
+        "total_reviews": 503,
+        "unique_prs": 203,
         "type_breakdown": {
-          "COMMENTED": 339,
-          "CHANGES_REQUESTED": 31,
-          "APPROVED": 133,
+          "COMMENTED": 335,
+          "CHANGES_REQUESTED": 33,
+          "APPROVED": 134,
           "DISMISSED": 1
         }
       }
@@ -14531,58 +14593,58 @@
   "leaderboard": [
     {
       "user": "DarkLight1337",
-      "total_reviews": 3569,
-      "unique_prs": 1646,
-      "approved": 1335,
-      "commented": 2231,
+      "total_reviews": 3579,
+      "unique_prs": 1654,
+      "approved": 1342,
+      "commented": 2234,
       "changes_requested": 3
     },
     {
       "user": "yewentao256",
-      "total_reviews": 1840,
-      "unique_prs": 992,
-      "approved": 606,
-      "commented": 1210,
+      "total_reviews": 1849,
+      "unique_prs": 996,
+      "approved": 609,
+      "commented": 1216,
       "changes_requested": 16
     },
     {
       "user": "tjtanaa",
-      "total_reviews": 1715,
-      "unique_prs": 807,
+      "total_reviews": 1716,
+      "unique_prs": 808,
       "approved": 634,
-      "commented": 1059,
+      "commented": 1060,
       "changes_requested": 18
     },
     {
       "user": "mgoin",
-      "total_reviews": 1646,
-      "unique_prs": 1195,
-      "approved": 1034,
-      "commented": 575,
+      "total_reviews": 1655,
+      "unique_prs": 1204,
+      "approved": 1040,
+      "commented": 578,
       "changes_requested": 37
     },
     {
       "user": "hmellor",
-      "total_reviews": 1533,
-      "unique_prs": 694,
-      "approved": 348,
+      "total_reviews": 1536,
+      "unique_prs": 697,
+      "approved": 349,
       "commented": 1034,
-      "changes_requested": 133
+      "changes_requested": 135
     },
     {
       "user": "njhill",
-      "total_reviews": 1417,
-      "unique_prs": 896,
-      "approved": 650,
-      "commented": 719,
-      "changes_requested": 48
+      "total_reviews": 1435,
+      "unique_prs": 907,
+      "approved": 662,
+      "commented": 724,
+      "changes_requested": 49
     },
     {
       "user": "AndreasKaratzas",
-      "total_reviews": 1251,
-      "unique_prs": 744,
-      "approved": 409,
-      "commented": 812,
+      "total_reviews": 1260,
+      "unique_prs": 750,
+      "approved": 414,
+      "commented": 816,
       "changes_requested": 24
     },
     {
@@ -14603,9 +14665,9 @@
     },
     {
       "user": "NickLucche",
-      "total_reviews": 788,
-      "unique_prs": 434,
-      "approved": 231,
+      "total_reviews": 789,
+      "unique_prs": 435,
+      "approved": 232,
       "commented": 520,
       "changes_requested": 35
     }
@@ -14613,82 +14675,82 @@
   "recent_leaderboard": [
     {
       "user": "DarkLight1337",
-      "total_reviews": 785,
-      "unique_prs": 426,
-      "approved": 371,
+      "total_reviews": 790,
+      "unique_prs": 432,
+      "approved": 376,
       "commented": 413,
       "changes_requested": 1
     },
     {
       "user": "yewentao256",
-      "total_reviews": 589,
-      "unique_prs": 312,
-      "approved": 179,
-      "commented": 398,
+      "total_reviews": 587,
+      "unique_prs": 309,
+      "approved": 178,
+      "commented": 397,
       "changes_requested": 9
     },
     {
       "user": "njhill",
-      "total_reviews": 531,
-      "unique_prs": 376,
-      "approved": 302,
-      "commented": 204,
+      "total_reviews": 540,
+      "unique_prs": 381,
+      "approved": 309,
+      "commented": 206,
       "changes_requested": 25
     },
     {
-      "user": "hmellor",
-      "total_reviews": 504,
-      "unique_prs": 201,
-      "approved": 133,
-      "commented": 339,
-      "changes_requested": 31
-    },
-    {
       "user": "AndreasKaratzas",
-      "total_reviews": 502,
+      "total_reviews": 504,
       "unique_prs": 376,
-      "approved": 290,
-      "commented": 194,
+      "approved": 291,
+      "commented": 195,
       "changes_requested": 12
     },
     {
+      "user": "hmellor",
+      "total_reviews": 503,
+      "unique_prs": 203,
+      "approved": 134,
+      "commented": 335,
+      "changes_requested": 33
+    },
+    {
       "user": "mgoin",
-      "total_reviews": 437,
-      "unique_prs": 346,
+      "total_reviews": 440,
+      "unique_prs": 350,
       "approved": 307,
-      "commented": 119,
+      "commented": 122,
       "changes_requested": 11
     },
     {
       "user": "Isotr0py",
-      "total_reviews": 398,
-      "unique_prs": 271,
-      "approved": 233,
+      "total_reviews": 396,
+      "unique_prs": 269,
+      "approved": 231,
       "commented": 163,
       "changes_requested": 2
     },
     {
       "user": "tjtanaa",
-      "total_reviews": 367,
-      "unique_prs": 236,
-      "approved": 190,
+      "total_reviews": 365,
+      "unique_prs": 234,
+      "approved": 188,
       "commented": 172,
       "changes_requested": 5
     },
     {
       "user": "chaunceyjiang",
-      "total_reviews": 154,
-      "unique_prs": 100,
-      "approved": 45,
-      "commented": 109,
+      "total_reviews": 148,
+      "unique_prs": 98,
+      "approved": 43,
+      "commented": 105,
       "changes_requested": 0
     },
     {
       "user": "NickLucche",
       "total_reviews": 144,
-      "unique_prs": 107,
-      "approved": 66,
-      "commented": 76,
+      "unique_prs": 108,
+      "approved": 67,
+      "commented": 75,
       "changes_requested": 2
     }
   ]
